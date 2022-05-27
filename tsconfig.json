@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    // build settings
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "incremental": true,
+    "removeComments": true,
+    "outDir": "./build",
+    "target": "ES2017",
+    "lib": ["ES2015", "ScriptHost"],
+    "esModuleInterop": true,
+    "charset": "utf8",
+
+    // js settings
+    "checkJs": false,
+    "allowJs": false,
+
+    // checking rules
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+
+    // path resolving
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"],
+      "~/*": ["./test/*"]
+    }
+  },
+  "exclude": ["node_modules", "build"]
+}
